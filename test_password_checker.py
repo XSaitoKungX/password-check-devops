@@ -14,3 +14,10 @@ def test_no_lowercase():
 
 def test_no_uppercase():
     assert is_valid_password("abcdefg1!") == False
+
+def test_no_special_character():
+    assert is_valid_password("Abcdefg1") == False
+
+def test_is_valid_password_with_special_characters():
+    assert is_valid_password("Abcdefg1!@#") == True
+
