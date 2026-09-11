@@ -7,7 +7,7 @@ def test_too_short():
     assert is_valid_password("Ab1!") == False
 
 def test_no_number():
-    assert is_valid_password("AbcdefG") == False
+    assert is_valid_password("AbcdefG!") == False
 
 def test_no_lowercase():
     assert is_valid_password("ABCDEFG1!") == False
